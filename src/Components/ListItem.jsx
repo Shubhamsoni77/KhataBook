@@ -27,8 +27,8 @@ const ListItem = ({transaction}) => {
         onClick={()=>del(transaction.id)}  
         className='text-white' />
     </span>
-    <h1 className='font-bold text-white text-base text-center '>{transaction.text}</h1>
-    <h1 className='font-bold text-white text-3xl text-center '>{transaction.amount} </h1> 
+    <h1 className='font-bold text-black text-base text-center '>{transaction.text}</h1>
+    <h1 className='font-bold text-black text-3xl text-center '>{transaction.amount} </h1> 
   </div>
   )
 }
