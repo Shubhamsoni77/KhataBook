@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import TransactionContext from '../context/TransactionContext'
 
-const Form = ({add,edit,updateTransaction}) => {
-  // console.log(edit)  
+const Form = () => {
+  // console.log(edit) 
+  
+    const { add, edit, updateTransaction } = useContext(TransactionContext)
 
   const [text, setText] = useState("")
   const [amount, setAmount] = useState("")

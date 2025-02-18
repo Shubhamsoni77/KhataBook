@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import TransactionContext from '../context/TransactionContext'
 
-const Dashboard = ({transactions}) => { 
+const Dashboard = () => { 
+
+  const {transactions} = useContext(TransactionContext)
+
 
   const income = transactions.filter((transaction) => transaction.amount > 0 )
 

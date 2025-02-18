@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaEdit, FaTrash } from "react-icons/fa";
+import TransactionContext from '../context/TransactionContext';
 
 
-const ListItem = ({transaction,del,editing}) => { 
-  // console.log(transaction) 
+const ListItem = ({transaction}) => { 
+  console.log(transaction) 
 
+    const {del,editing} = useContext(TransactionContext)
 
   
 
